@@ -1,0 +1,13 @@
+{%- for router in routers %}
+    hostname {{ router.hostname }}
+{%- for interface in router.interfaces %}
+    interface {{ interface.name }}
+    ip address {{ interface.ip_address }} {{ interface.ip_mask }} 
+    {%- if interface.vlanid is defined %}
+    Encapsulation dot1Q {{interface.vlanid}}
+    {%- endif %}
+    {%- if interface.status == "up" %}
+    no sh
+    {% endif %}
+{% endfor %}
+{% endfor %}
