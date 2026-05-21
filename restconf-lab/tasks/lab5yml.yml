@@ -1,0 +1,59 @@
+R2:
+  - mgmt_ip:
+    - ip: 192.168.1.102
+      mask: 255.255.255.0
+      is_up: True
+  - interfaces:
+    - name: GigabitEthernet2
+      ip: 192.168.2.1
+      mask: 255.255.255.0
+      is_up: True
+    - name: GigabitEthernet3
+      ip: 192.168.3.1
+      mask: 255.255.255.0
+      is_up: True
+
+R3:
+  - mgmt_ip:
+    - ip: 192.168.1.103
+      mask: 255.255.255.0
+      is_up: True
+  - interfaces:
+    - name: GigabitEthernet2
+      ip: 192.168.2.2
+      mask: 255.255.255.0
+      is_up: True
+    - name: GigabitEthernet3
+      ip: 192.168.3.2
+      mask: 255.255.255.0
+      is_up: True
+
+R4:
+  - mgmt_ip:
+    - ip: 192.168.1.104
+      mask: 255.255.255.0
+      is_up: True
+  - interfaces:
+    - name: GigabitEthernet2
+      ip: 192.168.2.3
+      mask: 255.255.255.0
+      is_up: True
+    - name: GigabitEthernet3
+      ip: 192.168.3.1
+      mask: 255.255.255.0
+      is_up: True
+
+R5:
+  - mgmt_ip:
+    - ip: 192.168.1.105
+      mask: 255.255.255.0
+      is_up: True
+  - interfaces:
+    - name: GigabitEthernet2
+      ip: 192.168.2.4
+      mask: 255.255.255.0
+      is_up: True
+    - name: GigabitEthernet3
+      ip: 192.168.3.4
+      mask: 255.255.255.0
+      is_up: True
